@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.10)
+project(LibDemo)
+add_library(demo lib/demo.cpp)
+add_executable(demo_app main.cpp)
+target_link_libraries(demo_app demo)
